@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../CSS/productos.css">
+
+     <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+        <!-- Logo -->
+    <div class="logo-container">
+        <img src="../IMG/LOGO 2.png" alt="Logo" class="logo" onclick="goToIndex()">
+    </div>
+<header>
+    <div class="logo-container">
+        <img src="../IMG/LOGO 2.png" alt="Logo" class="logo" onclick="goToIndex()">
+    </div>
+    <nav>    
+        <ul class="menu">     
+            <li><a href="../html/Index.html">Inicio</a></li>        
+            <li><a href="../HTML/sobremi.html">Sobre Mi</a></li>                
+            <li><a href="../HTML/productos.html">Productos</a></li>
+        </ul>
+    </nav> 
+</header>
+
+    <!-- Galería -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="../HTML/whitecane.html">
+                <img src="../IMG/BASTON 1.jpg" alt="Image 1">
+                    <div class="overlay">
+                        <div class="text">
+                            <h2>WHITE CANE</h2>
+                            <p>Colaboración con Adidas, producido y desarrollado para Dan Mancina.</p>
+                        </div>
+                    </div>
+            </a>    
+        </div>
+
+        <div class="gallery-item">
+            <a href="../HTML/iberia.html">
+                <img src="../IMG/IBERIA 1.jpg" alt="Image 2">
+                    <div class="overlay">
+                        <div class="text">
+                            <h2>R.A.I.S.S.</h2>
+                            <p>Sistema de limpieza y saneamiento de WC autónomo durante el vuelo, colaborando con IBERIA</p>
+                        </div>
+                    </div>
+            </a>
+        </div>
+
+        <div class="gallery-item">
+            <a href="../HTML/Pilma.html">
+                <img src="../IMG/PILMA 1.png" alt="Image 3">
+                    <div class="overlay">
+                        <div class="text">
+                            <h2>KRAM</h2>
+                            <p>Colección desarrollada e inspirada en Finn Juhl para Pilma</p>
+                        </div>
+                    </div>
+            </a>
+        </div>
+
+        <div class="gallery-item">
+            <a href="../HTML/veiga.html">
+                <img src="../IMG/VEIGA 1.jpg" alt="Image 4">
+                    <div class="overlay">
+                        <div class="text">
+                            <h2>VEIGA</h2>
+                            <p>Propuesta para el concurso Veralia de 2021.</p>
+                        </div>
+                    </div>
+            </a>
+        </div>
+
+        <div class="gallery-item">
+            <a href="../HTML/cleanexe.html" >
+                <img src="../IMG/CleanEXE 2.jpg" alt="Image 5">
+                    <div class="overlay">
+                        <div class="text">
+                            <h2>CleanEXE</h2>
+                            <p>¿Alguna vez has pensado en como podrías llevar tu neceser diario en algo tan pequeño como un estuche?</p>
+                        </div>
+                    </div>
+            </a>
+        </div>
+
+        <div class="gallery-item">
+            <a href="../HTML/skigoggles.html">
+                <img src="../IMG/SKI GOGGLES 1.jpg" alt="Image 6">
+                    <div class="overlay">
+                        <div class="text">
+                            <h2>Ski Goggles</h2>
+                            <p>Propuesta de gafas de esquiar para la marca Mammut</p>
+                        </div>
+                    </div>
+            </a>
+        </div>
+    </div>
+
+     <!-- Sección Contacto -->
+     <footer id="contacto" class="contact-section">
+        <h2>Contacto</h2>
+        <div class="contact-container">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:guillermo.fdez.arias@gmail.com">guillermo.fdez.arias@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+34648405496">+34 648 405 496</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Alcobendas, Madrid, España</p>
+            </div>
+            <ul class="iconos">
+                <li class="icon-elem">
+                    <a href="https://www.instagram.com/wilo_design?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="icon">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li class="icon-elem">
+                    <a href="https://www.linkedin.com/in/guillermo-fernández-arias-6539ab1b4/" class="icon">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+            <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+          ></script>
+          
+          <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+          ></script>   
+          
+          <script>
+            function goToIndex() {
+                window.location.href = '../HTML/Index.html';
+            }
+        </script>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("abajo",window.scrollY>0);
+        })
+    </script>
+</html>

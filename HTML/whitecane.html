@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Cane</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+
+     <!-- GOOGLE FONT -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="../IMG/LOGO 2.png" alt="Logo" class="logo" onclick="goToIndex()">
+    </div>
+
+    <ul class="menu">     
+        <li><a href="../HTML/Index.html">Inicio</a></li>        
+        <li><a href="../HTML/sobremi.html">Sobre Mi</a></li>                
+        <li><a href="../HTML/productos.html">Productos</a></li>
+    </ul>
+    
+    <header>
+        <h1>White Cane</h1>
+        <p>Colaboración con Adidas, producido y desarrollado para Dan Mancina</p>
+    </header>
+
+    <nav>
+        <!-- Navigation content -->
+    </nav>
+
+    <div class="container">
+        <main>
+            <section class="carousel-container">
+                <div class="carousel">
+                    <div class="slide fade">
+                        <img src="../IMG/BASTON 1.jpg" alt="White Cane Photo 1">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../IMG/BASTON 2.jpg" alt="White Cane Photo 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../IMG/BASTON 3.jpg" alt="White Cane Photo 3">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../IMG/BASTON 4.jpg" alt="White Cane Photo 3">
+                    </div>
+                </div>
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+            </section>
+        
+            <aside>
+                <section class="product-description">
+                    <h2>Descripción del producto</h2>
+                    <p>The White Cane, alias SKANE, es un bastón de invidentes dedicados a deportes de riesgo, principalmente el Skate. En una primera instancia este producto se desarrolló para el skater Dan Mancina.</p>
+                </section>
+
+                <section class="features">
+                    <h2>Mejoras</h2>
+                    <ul>
+                        <li>Ligero y resistente a caidas y golpes</li>
+                        <li>Mejora ergonómica de la mano</li>
+                        <li>puntas intercambiables de ABS</li>
+                        <li>Intercalación de medidas hasta 1,70 cm</li>
+                        <li>Se puede ajustar a la altura perfecta del consumidor</li>
+                    </ul>
+                </section>
+
+                <section class="specifications">
+                    <h2>Especificaciones</h2>
+                    <table>
+                        <tr>
+                            <th>Apartados</th>
+                            <th>Descripción</th>
+                        </tr>
+                        <tr>
+                            <td>Materiales</td>
+                            <td>Fibra de carbono y Kevlar</td>
+                        </tr>
+                        <tr>
+                            <td>Peso</td>
+                            <td>900 gramos</td>
+                        </tr>
+                        <tr>
+                            <td> Vida util</td>
+                            <td>Piezas intercambiales reparable en casa</td>
+                        </tr>
+                        <tr>
+                            <td>Reciclable</td>
+                            <td>Todos los materailes se pueden separar</td>
+                        </tr>
+                    </table>
+                </section>
+            </aside>
+        </main>
+    </div>
+
+     <!-- Sección Contacto -->
+     <footer id="contacto" class="contact-section">
+        <h3>Contacto</h3>
+        <div class="contact-container">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:guillermo.fdez.arias@gmail.com">guillermo.fdez.arias@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+34648405496">+34 648 405 496</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Alcobendas, Madrid, España</p>
+            </div>
+            <ul class="iconos">
+                <li class="icon-elem">
+                    <a href="https://www.instagram.com/wilo_design?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="icon">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li class="icon-elem">
+                    <a href="https://www.linkedin.com/in/guillermo-fernández-arias-6539ab1b4/" class="icon">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+            <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+          ></script>
+          
+          <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+          ></script>
+        
+    <script src="../JS/carousel.js"></script>
+
+    <!-- Lightbox structure -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="../JS/lightbox.js"></script>
+
+    <script>
+        function goToIndex() {
+            window.location.href = '../HTML/Index.html';
+        }
+    </script>
+
+</body>
+</html>

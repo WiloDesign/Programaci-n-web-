@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 2%;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+header.abajo{
+    background: #fff;
+    padding: 15px 20px;
+}
+header .logo{
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    font-family: helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+header.abajo .logo,
+header.abajo ul li a{
+    color: #000;
+}
+
+/*HASTA AQUÍ MENU*/
+
+
+.about-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.103),rgba(0, 0, 0, 0.178)),url(../IMG/Imagen\ Actual\ extendida.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.about-container {
+    margin-left: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-info {
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-info h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about-info p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #4e4e4e;
+    text-align: justify;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background: #4e4e4e34;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Sección de Contacto */
+.contact-section {
+    background: #333;
+    width: 100%;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center; /* Center the container */
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 20px; /* Add padding to the container */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px; /* Add margin to each contact item */
+}
+
+.contact-item i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.contact-item p,
+.contact-item a {
+    color: #ddd;
+    text-decoration: none; /* Ensure no text decoration */
+    font-size: 16px;
+}
+
+.contact-item a:hover {
+    color: #ffffff;
+}
+
+/* Iconos sociales */
+.iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.icon-elem {
+    list-style: none;
+}
+
+.icon {
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+.icon:hover {
+    transform: translateY(-10px);
+}

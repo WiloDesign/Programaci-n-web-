@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.A.I.S.S IBERIA</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+
+     <!-- GOOGLE FONT -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="../IMG/LOGO 2.png" alt="Logo" class="logo" onclick="goToIndex()">
+    </div>
+
+    <ul class="menu">     
+        <li><a href="../HTML/Index.html">Inicio</a></li>        
+        <li><a href="../HTML/sobremi.html">Sobre Mi</a></li>                
+        <li><a href="../HTML/productos.html">Productos</a></li>
+    </ul>
+    
+    <header>
+        <h1>R.A.I.S.S.</h1>
+        <p>Sistema de limpieza y saneamiento de WC autónomo durante el vuelo, colaborando con IBERIA</p>
+    </header>
+
+    <nav>
+        <!-- Navigation content -->
+    </nav>
+
+    <div class="container">
+        <main>
+            <section class="carousel-container">
+                <div class="carousel">
+                    <div class="slide fade">
+                        <img src="../IMG/IBERIA 1.jpg" alt="White Cane Photo 1">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../IMG/IBERIA 2.png" alt="White Cane Photo 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../IMG/IBERIA 3.png" alt="White Cane Photo 3">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../IMG/IBERIA 4.jpg" alt="White Cane Photo 3">
+                    </div>
+                </div>
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+            </section>
+        
+            <aside>
+                <section class="product-description">
+                    <h2>Descripción del producto</h2>
+                    <p>A comienzos de 2024, se desarrolló un prototipo funcional para Iberia que rediseña los baños en vuelos transoceánicos, presentado a los Crystal Cabin Awards. El proyecto busca optimizar la limpieza, accesibilidad, usabilidad y confort emocional, implementado en los aseos del Airbus A350.</p>
+                </section>
+
+                <section class="features">
+                    <h2>Mejoras</h2>
+                    <ul>
+                        <li>1. Robot de limpieza</li>
+                            <p>Un robot automatizado y discreto barre, friega y desinfecta periódicamente el suelo, almacenando la suciedad en un receptáculo oculto. Mejora la higiene y reduce el mantenimiento por parte del personal.</p>
+                        <li>2. Ergonomía y accesibilidad optimizadas</li>
+                            <p>El diseño garantiza comodidad e intuitividad. Se está trabajando en la adaptación para personas con discapacidad visual, incluyendo guías táctiles y señalización accesible.</p>
+                        <li>3. Reducción de la claustrofobia</li>
+                            <p>Una ventana simulada con proyecciones dinámicas crea sensación de amplitud y ofrece funciones interactivas como indicaciones de seguridad.</p>
+                        <li>4. Simplificación del espacio</li>
+                            <p> • Componentes integrados: grifo y dispensador automático.</p>
+                            <p> • Papel de manos reubicado bajo el espejo.</p>  
+                            <p> • Espejo ampliado para mejorar la percepción del espacio.</p>
+                        <li>5. Acabados optimizados</li>
+                            <p> • Revestimiento blanco satinado para luminosidad y sensación de limpieza.</p>
+                            <p> • Suelo oscuro para disimular manchas entre ciclos de limpieza del robot.</p>    
+                    </ul>
+                </section>
+            </aside>
+        </main>
+    </div>
+
+     <!-- Sección Contacto -->
+     <footer id="contacto" class="contact-section">
+        <h3>Contacto</h3>
+        <div class="contact-container">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:guillermo.fdez.arias@gmail.com">guillermo.fdez.arias@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+34648405496">+34 648 405 496</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Alcobendas, Madrid, España</p>
+            </div>
+            <ul class="iconos">
+                <li class="icon-elem">
+                    <a href="https://www.instagram.com/wilo_design?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="icon">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li class="icon-elem">
+                    <a href="https://www.linkedin.com/in/guillermo-fernández-arias-6539ab1b4/" class="icon">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+            <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+          ></script>
+          
+          <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+          ></script>
+        
+    <script src="../JS/carousel.js"></script>
+
+    <!-- Lightbox structure -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="../JS/lightbox.js"></script>
+
+    <script>
+        function goToIndex() {
+            window.location.href = '../HTML/Index.html';
+        }
+    </script>
+
+</body>
+</html>
